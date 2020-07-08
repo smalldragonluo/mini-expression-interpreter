@@ -25,9 +25,6 @@
     "type": "git",
     "url": "git@github.com:smalldragonluo/mini-expression-interpreter.git"
   },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
-  },
   "devDependencies": {
     "jison": "^0.4.18"
   }
