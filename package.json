@@ -1,0 +1,34 @@
+{
+  "name": "mini-expression-interpreter",
+  "version": "0.0.1",
+  "description": "A mini JavaScript expression interpreter",
+  "keywords": [
+    "JavaScript",
+    "expression",
+    "interpreter"
+  ],
+  "author": {
+    "name": "smalldragonluo",
+    "email": "smaldragonluo@gmail.com",
+    "url": "https://blog.smalldragonluo.com/"
+  },
+  "scripts": {
+    "build": "jison ./lib/grammar.jison -m commonjs -o ./lib/parser.js",
+    "test": "node ./test/interpret.test.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/mini-expression-interpreter.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:smalldragonluo/mini-expression-interpreter.git"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "devDependencies": {
+    "jison": "^0.4.18"
+  }
+}
