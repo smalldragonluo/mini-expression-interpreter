@@ -117,18 +117,3 @@ assert.equal(
   4,
   'should calculate correctly'
 );
-
-assert.equal(
-  new Interpreter('0 ? 1 : 2 ? ($[0].values[0] > $[1].values[0] ? 3 : 4 ) : 5').exec({
-    $: [
-      {
-        values: [100]
-      },
-      {
-        values: [200]
-      }
-    ],
-  }),
-  4,
-  'should calculate correctly'
-);

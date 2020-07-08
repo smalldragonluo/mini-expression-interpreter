@@ -25,7 +25,7 @@ Usage
 
 ```js
 const assert = require('assert');
-const Interpreter = require('../lib/mini-expression-interpreter');
+const Interpreter = require('mini-expression-interpreter');
 // 需要执行的表达式代码
 const code = '0 ? 1 : 2 ? ($[0].values[0] > $[1].values[0] ? 3 : 4 ) : 5';
 // 需要参与计算的上下文变量
